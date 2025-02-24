@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Hopelink</title>
+    <link rel="stylesheet" href="forgotpass.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Hopelink</div>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/about_us/about.html">About</a>
+            <a href="/campaigns/campaigns.html">Caampaigns</a>
+            <a href="#donate">Donate</a>
+            <a href="/about_us/contactus.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Reset Password Container -->
+    <div class="reset-container">
+        <div class="reset-card">
+            <div class="reset-header">
+                <h1>Forgot Password?</h1>
+                <p>Enter your email address below and we'll send you instructions to reset your password.</p>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                Password reset instructions have been sent to your email.
+            </div>
+
+            <div class="error-message" id="errorMessage">
+                Email address not found. Please check and try again.
+            </div>
+
+            <form id="resetForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Enter your registered email"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="reset-button">Reset Password</button>
+                
+                <div class="back-to-login">
+                    <a href="/login/login.html">Back to Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

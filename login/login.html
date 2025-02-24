@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hopelink</title>
+   <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Hopelink</div>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/about_us/about.html">About</a>
+            <a href="/campaigns/campaigns.html">Campaigns</a>
+            <a href="#donate">Donate</a>
+            <a href="/about_us/contactus.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to continue making a difference</p>
+            </div>
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+                <button type="submit" class="login-button">Sign In</button>
+                <div class="forgot-password">
+                    <a href="/login/forgotpass.html">Forgot your password?</a>
+                </div>
+                <div class="signup-prompt">
+                    Don't have an account? <a href="/login/signup.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
